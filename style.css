@@ -1,0 +1,642 @@
+/* Reset CSS */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #0c0c0c;
+    font-family: '微軟正黑體',
+        'Microsoft JhengHei',
+        Helvetica,
+        'PingFang SC',
+        Arial,
+        sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #FFF;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: -0.5%;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #f2f2f2;
+    text-align: justify
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 0.3
+}
+
+a:link {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+img {
+    width: 100%;
+}
+
+/* ==== title ==== */
+.logo {
+    top: 1em;
+    left: 1em;
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.title {
+    /* border: 1px solid #00b0bd; */
+    height: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.title.wrapper {
+    top: 50%;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caption {
+    /* border: 1px solid #7492b7; */
+    max-width: 45%;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.social-link {
+    /* border: 1px solid #00b0bd; */
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    transition: all 0.5s;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 2em
+}
+
+.social-link a {
+    color: #fff;
+}
+
+/* Loading */
+#maincontainer {
+    opacity: 1;
+    transition: opacity 3s ease-out 0.1s;
+}
+
+#maincontainer.loading {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+}
+
+/* ===== menu ===== */
+
+#menu-section {
+    height: 100%;
+    background: #0c0c0c;
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Month */
+.month,
+.sub-month {
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.monthFilterBtn {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    color: #af9a84;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.dayFilterBtn:nth-child(odd) {
+    /* border: 1px solid #1fbd00; */
+    color: #ddd;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 30px;
+}
+
+.dayFilterBtn:nth-child(even) {
+    /* border: 1px solid #00b0bd; */
+    color: #ddd;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-right: 30px;
+}
+
+/* Category */
+.category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.typeFilterBtn {
+    display: inline-block;
+    margin: 0;
+    padding: 20px 7px;
+    text-align: center;
+    /* border: 1px solid #00b0bd; */
+}
+
+.monthFilterBtn.filter,
+.typeFilterBtn.filter,
+.dayFilterBtn.filter {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    /* Safari */
+}
+
+.monthFilterBtn.hover,
+.typeFilterBtn:hover,
+.dayFilterBtn:hover {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    /* Safari */
+}
+
+.monthFilterBtn.active,
+.typeFilterBtn.active,
+.dayFilterBtn.active {
+    /* filter: saturate(800%);
+    -webkit-filter: saturate(800%); */
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    /* Safari */
+}
+
+#clearFilterBtn {
+    /* All */
+    color: #858585;
+}
+
+.typeFilterBtn[data-type="march"] {
+    /* 遊行集會 */
+    color: #994557;
+}
+
+.typeFilterBtn[data-type="occupy"] {
+    /* 佔領圍堵 */
+    color: #b77d8c;
+}
+
+.typeFilterBtn[data-type="disobey"] {
+    /* 不合作運動 */
+    color: #995647;
+}
+
+.typeFilterBtn[data-type="lobby"] {
+    /* 遊說宣傳 */
+    color: #ce7280;
+}
+
+.typeFilterBtn[data-type="attack"] {
+    /* 傷人 */
+    color: #4274bc;
+}
+
+.typeFilterBtn[data-type="police"] {
+    /* 警民衝突 */
+    color: #7492b7;
+}
+
+.typeFilterBtn[data-type="arrest"] {
+    /* 拘捕 */
+    color: #5d6989;
+}
+
+.typeFilterBtn[data-type="hk-gov"] {
+    /* 港府回應 */
+    color: #a871a4;
+}
+
+.typeFilterBtn[data-type="china-gov"] {
+    /* 中央回應 */
+    color: #9f3faa;
+}
+
+.typeFilterBtn[data-type="special"] {
+    /* 特別消息 */
+    color: #8e7491;
+}
+
+.typeFilterBtn[data-type="others"] {
+    /* 其他 */
+    color: #848484;
+}
+
+/* button */
+
+button {
+    /* padding: 6px 16px; */
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    /* -webkit-transition-duration: 0.4s; */
+    /* transition-duration: 0.4s; */
+    cursor: pointer;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+}
+
+#gotop {
+    position: fixed;
+    z-index: 90;
+    right: 30px;
+    bottom: 31px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background: #fff;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* #gotop :hover {
+    background: #0099CC;
+} */
+
+/*===== Vertical Timeline =====*/
+#main-timeline {
+    position: relative;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-timeline .timeline-start,
+#main-timeline .timeline-end {
+    display: table;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #00b0bd;
+    padding: 15px 23px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main-timeline .center-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 60%;
+    margin-left: -2px;
+    background: #af9a84;
+    z-index: -1;
+}
+
+#main-timeline .timeline-content {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+/* timeline content */
+.timeline {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.timeline .content-left-container {
+    max-width: 56%;
+    width: 100%;
+}
+
+.timeline .content-right-container {
+    max-width: 36%;
+    width: 100%;
+}
+
+.timeline .content-left,
+.timeline .content-right {
+    position: relative;
+    width: auto;
+    padding: 0px 25px 80px;
+}
+
+.content-left img {
+    width: 100%;
+    margin: 0 0 1% 0;
+}
+
+.content-left.photo-thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-left.photo-thumb img {
+    position: relative;
+    width: 49.5%;
+}
+
+.timeline p {
+    margin-bottom: 1em;
+    text-align: justify;
+    font-weight: 300;
+    padding: 0;
+    color: #c9c9c9;
+    font-size: 0.95em;
+    position: relative;
+}
+
+.timeline .space {
+    margin: 20px;
+}
+
+.timeline i {
+    display: inline;
+    color: #777;
+    padding: 3px 0 0 0;
+}
+
+.timeline .readmore {
+    display: inline;
+    background-color: #777;
+    color: #fff;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-left: 5px;
+    padding: 2px 5px;
+}
+
+.content-left-container p {
+    text-align: right;
+    font-size: 0.9em;
+    color: #525252;
+}
+
+/* .timeline-article p span.article-number {
+    position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    top: 10px;
+    left: -60px;
+    color: #00b0bd;
+} */
+
+.timeline .content-left-container {
+    float: left;
+}
+
+.timeline .content-right-container {
+    float: right;
+}
+
+.timeline.article .meta-date {
+    position: absolute;
+    top: 1em;
+    left: 60%;
+    width: 65px;
+    height: 60px;
+    margin-left: -31px;
+    color: #af9a84;
+    border-radius: 10%;
+    background: #0c0c0c;
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.content-right span {
+    margin-right: 3%;
+}
+
+.timeline.article {
+    display: block;
+    height: 100%;
+    transition: all 2s ease-out 2s;
+}
+
+.timeline.article.hide {
+    display: none;
+    height: 0%;
+}
+
+/*===== // Vertical Timeline =====*/
+
+.credits {
+    width: 100%;
+    padding: 10em 0 0 0;
+    font-size: .9em;
+    color: #afafaf
+}
+
+.credits table {
+    margin: 0 auto;
+}
+
+.credits td {
+    padding: .3em 1em;
+}
+
+.credits td.item {
+    padding: .3em .3em .3em 1em;
+}
+
+.credits p {
+    color: #777;
+    font-weight: 500;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* effects */
+
+.timeline div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 1080px) {
+    h1 span {
+        display: inline-block;
+        width: auto;
+        word-wrap: break-word;
+        white-space: normal
+    }
+
+    h3 {
+        line-height: 1.1
+    }
+
+    .logo {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .title.wrapper {
+        width: 90%
+    }
+
+    .title.wrapper h1 {
+        word-break: break-all;
+        font-size: 1.5em;
+    }
+
+    .caption {
+        max-width: none;
+        font-size: 1em;
+    }
+
+    #menu-section {
+        padding: 20px 0;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #menu-section .month {
+        margin-bottom: 2%
+    }
+
+    #menu-section .dayFilterBtn {
+        display: none
+    }
+
+    #menu-section .category {
+        justify-content: flex-start;
+    }
+
+    #menu-section .typeFilterBtn {
+        padding: 7px;
+        width: 30vw;
+    }
+
+
+    #main-timeline .timeline-start,
+    #main-timeline .timeline-end {
+        margin: 0;
+    }
+
+    #main-timeline .center-line {
+        margin-left: 0;
+        left: 40px;
+    }
+
+    .timeline.article .meta-date {
+        margin-left: 0;
+        left: 10px;
+        font-size: 1.2em;
+    }
+
+    .timeline.article .content-left-container,
+    .timeline.article .content-right-container {
+        max-width: 100%;
+        width: auto;
+        float: none;
+        margin-left: 4em;
+        min-height: 120px;
+    }
+
+    .timeline.article .content-right {
+        padding: 1.2em 1em;
+        min-height: 3em;
+    }
+
+    .timeline.article .content-left {
+        padding: 2em 1em 0.5em 1em;
+        min-height: 2em;
+    }
+
+    .credits {
+        font-size: .85em
+    }
+
+    .credits td.item {
+        width: 5em
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .typeFilterBtn {
+        max-width: none !important;
+    }
+}
+
+/*===== // Resonsive Vertical Timeline =====*/
