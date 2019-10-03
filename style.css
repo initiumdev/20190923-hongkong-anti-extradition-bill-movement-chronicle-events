@@ -154,6 +154,7 @@ img {
 }
 
 .monthFilterBtn {
+    /* border: 1px solid #7492b7; */
     display: inline-block;
     width: 25%;
     margin: 0;
@@ -163,8 +164,25 @@ img {
     font-weight: 600;
 }
 
-.dayFilterBtn:nth-child(odd) {
+.dayFilterBtn {
     /* border: 1px solid #1fbd00; */
+    color: #ddd;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 0;
+    width: 10%;
+}
+
+.dayFilterBtn#october {
+    width: 20%;
+}
+
+.dayFilterBtn#add-line {
+    border-right: 1px solid #ddd
+}
+
+/* .dayFilterBtn:nth-child(odd) {
     color: #ddd;
     font-size: 1.1em;
     font-weight: 300;
@@ -172,12 +190,11 @@ img {
 }
 
 .dayFilterBtn:nth-child(even) {
-    /* border: 1px solid #00b0bd; */
     color: #ddd;
     font-size: 1.1em;
     font-weight: 300;
     padding-right: 30px;
-}
+} */
 
 /* Category */
 .category {

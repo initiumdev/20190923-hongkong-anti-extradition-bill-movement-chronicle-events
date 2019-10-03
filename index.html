@@ -57,6 +57,7 @@
     </section>
     <section id='menu-section'>
         <div class="month">
+            <button class="monthFilterBtn" data-month="10">十月</button>
             <button class="monthFilterBtn" data-month="09">九月</button>
             <button class="monthFilterBtn" data-month="08">八月</button>
             <button class="monthFilterBtn" data-month="07">七月</button>
@@ -64,13 +65,14 @@
             <!-- <button class="monthFilterBtn" data-month="10">OCTOBER</button> -->
         </div>
         <div class="sub-month" style='margin-bottom:1%'>
-            <button class="dayFilterBtn" data-month="09" data-sort="1">16-30日</button>
+            <button class="dayFilterBtn" id="october" data-month="10" data-sort="0">01-15日</button>
+            <button class="dayFilterBtn" id="add-line" data-month="09" data-sort="1">16-30日</button>
             <button class="dayFilterBtn" data-month="09" data-sort="0">01-15日</button>
-            <button class="dayFilterBtn" data-month="08" data-sort="1">16-31日</button>
+            <button class="dayFilterBtn" id="add-line" data-month="08" data-sort="1">16-31日</button>
             <button class="dayFilterBtn" data-month="08" data-sort="0">01-15日</button>
-            <button class="dayFilterBtn" data-month="07" data-sort="1">16-31日</button>
+            <button class="dayFilterBtn" id="add-line" data-month="07" data-sort="1">16-31日</button>
             <button class="dayFilterBtn" data-month="07" data-sort="0">01-15日</button>
-            <button class="dayFilterBtn" data-month="06" data-sort="1">16-30日</button>
+            <button class="dayFilterBtn" id="add-line" data-month="06" data-sort="1">16-30日</button>
             <button class="dayFilterBtn" data-month="06" data-sort="0">01-15日</button>
         </div>
         <div class="category">
@@ -95,6 +97,435 @@
     <section id="main-timeline">
         <div class="center-line"></div>
         <div class="timeline-content">
+            <!-- content // -->
+            <div class="timeline article" data-type="special" data-time="20191002">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20191002.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <h2>右眼中彈的印尼女記者永久失明</h2>
+                        <p>在灣仔站行人天橋被警員擎槍射中右眼的印尼女記者，她的代表律師證實其右眼將永久失明，永久損傷程度要待手術後才能評估；她擬向警務處處長盧偉聰及肇事警員提起刑事、民事訴訟
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">1002</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="hk-gov" data-time="20191002">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#a871a4'>港府回應</span>
+                        </h3>
+                        <p>警方在記者會上多次強調警員遭示威者以致命武器襲擊，警員「生死懸一線」才在無選擇下開槍，稱警員開槍「合法合理」，而開槍及襲警事件已交新界南總區重案組一併調查，又質疑批評警方的人無接受過任何專業槍械訓練，無理據判斷警方有錯
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">1002</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march special" data-time="20191002">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <p>在10月1日衝突中被槍傷示威者所就讀的何傳耀紀念中學外，有一批學生及舊生身穿黑衣舉行集會；
+                        </p>
+                        <p>校方在正午發聲明指對有學生中槍受傷感到十分難過及擔憂，承諾不會處分受傷學生及會保留其學位</p>
+                    </div>
+                </div>
+                <div class="meta-date">1002</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march police attack" data-time="20191002">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#7492b7'>警民衝突</span>
+                            <span style='color:#4274bc'>襲擊傷人</span>
+                        </h3>
+                        <p>逾千名市民於午飯時間參與中環「快閃遊行」至上環新紀元廣場集會，抗議警方開槍鎮壓示威者；
+                        </p>
+                        <p>有網民發起晚上8區集會聲援中槍學生，在銅鑼灣祟光百貨外、荃灣沙道嘴遊樂場等地都有人聚集，而後多地發生衝突</p>
+                    </div>
+                </div>
+                <div class="meta-date">1002</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march police arrest" data-time="20191001">
+                <div class="content-left-container">
+                    <div class="content-left photo-thumb">
+                        <img src="./images/news-photo/20191001-01.jpg" alt="" style="width:100%">
+                        <img src="./images/news-photo/20191001-02.jpg" alt="">
+                        <img src="./images/news-photo/20191001-03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right photo-thumb">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#7492b7'>警民衝突</span>
+                            <span style='color:#5d6989'>拘捕</span>
+                        </h3>
+                        <h2>中國國慶日，香港六區示威衝突</h2>
+                        <p>有網民發起「十一國殤
+                            六區開花」集會，包括荃灣、屯門、深水埗、灣仔、黃大仙及沙田，而後多區演變激烈衝突，警方於荃灣、黃大仙及油麻地共發射6發實彈，其中荃灣一名18歲學生被警員近距離打中左肺，警方稱在當時情況下該做法「合法合理」；
+                        </p>
+                        <p>全日警方共使用約1400枚催淚彈、900枚橡膠子彈、190布袋彈、230枚海綿彈、6發實彈，曾使用水炮車；拘捕269人，年齡12至71歲；</p>
+                        <p>港鐵全日有47個車站關閉；</p>
+                        <p>工黨李卓人、民主黨何俊仁、社民連梁國雄以及民陣副召集人陳皓桓以個人名義，承接民陣原被駁回的遊行，由銅鑼灣遊行至中環遮打道。陳皓桓指根據民陣經驗有十萬人參與</p>
+                        <div><a href="https://theinitium.com/article/20191001-whatsnew-hk-national-day-protest/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>香港十一示威警方大規劃拘捕，衝突期間發射6發實彈</div>
+                            </a></div>
+                        <div><a href="https://theinitium.com/article/20191001-hongkong-national-day-protest-shot/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>法律學者籲以特別程序完整調查荃灣槍擊事件</div>
+                            </a></div>
+                        <div><a href="https://theinitium.com/article/20191002-opinion-police-shot-in-breast/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>子彈穿過孩子的胸膛，是一樁事先張揚的「謀殺案」</div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="meta-date">1001</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="special" data-time="20190930">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <p>藝人王宗堯因串謀刑事毁壞及進入或逗留會議廳範圍被捕
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0930</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march" data-time="20190930">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#a871a4'>遊行/集會</span>
+                        </h3>
+                        <p>中學生罷課籌備平台與多間學校關注組於中環遮打花園舉行罷課集會，大會宣布有1500人參與
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0930</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march attack" data-time="20190929">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20190929-04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right photo-thumb">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#4274bc'>襲擊傷人</span>
+                        </h3>
+                        <h2>929台港大遊行</h2>
+                        <p>台灣多個民間團體發起「929台港大遊行」，主辦方稱10萬人參加。除遊行外，台灣其他縣市亦有聲援香港的集會，如電影放映會及連儂牆等；
+                        </p>
+                        <p>香港歌手何韻詩出席遊行，遭大陳島鄉情文化促進會成員從後潑紅漆</p>
+                        <div><a href="https://theinitium.com/article/20190929-whatsnew-taiwan-hongkong-929/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>何韻詩於台灣撐港遊行遭台統派人士潑漆</div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="meta-date">0929</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march police arrest attack" data-time="20190929">
+                <div class="content-left-container">
+                    <div class="content-left photo-thumb">
+                        <img src="./images/news-photo/20190929-01.jpg" alt="" style="width:100%">
+                        <img src="./images/news-photo/20190929-02.jpg" alt="">
+                        <img src="./images/news-photo/20190929-03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right photo-thumb">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#7492b7'>警民衝突</span>
+                            <span style='color:#5d6989'>拘捕</span>
+                            <span style='color:#4274bc'>襲擊傷人</span>
+                        </h3>
+                        <h2>929全球反極權大遊行</h2>
+                        <p>有網民號召「929全球反極權大遊行」，全球共有24個國家，65個城市響應行動。遊行沒有申請不反對通知書，警方在午後開始截查聚集人士和車輛，2時多發射第一枚催淚彈，惟無法阻止遊行。遊行最後演變成金鐘、灣仔、銅鑼灣一帶的激烈衝突，示威者多處縱火、破壞地鐵站。警方全日共發射328枚催淚彈、306枚橡膠子彈，95枚布袋彈、79枚海棉彈，拘捕146人，43%為學生，其中96人被控參與暴動，一半是學生，年紀最小是14歲，案件於10月2日在西九龍裁判法院提堂；
+                        </p>
+                        <p>印尼女記者在灣仔稅務大樓天橋，被警員以橡膠子彈或布袋彈撃中右眼，其後醫生證實她右眼永久失明；</p>
+                        <p>警方證實灣仔曾有警員向天鳴槍一發示警，現場留有實彈彈殼</p>
+                        <div><a href="https://theinitium.com/article/20190929-whatsnews-global-anti-totalitarianism/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>「全球反極權」大遊行，港島一帶爆發激烈警民衝突</div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="meta-date">0929</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="hk-gov" data-time="20190928">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#a871a4'>港府回應</span>
+                        </h3>
+                        <p>政府晚上回應民陣集會，指一人一票普選特首及立法會全部議員，是《基本法》最終目標，需社會在法理的基礎上、平和互信的氛圍下，透過對話解決分歧方可達成各方可接受的共識。特區政府會審時度勢，按照《基本法》及全國人大常委會的相關解釋和決定推動政制發展；
+                        </p>
+                        <p>政府譴責示威者於政府總部附近堵路、破壞公物及縱火</p>
+                    </div>
+                </div>
+                <div class="meta-date">0928</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march police arrest" data-time="20190928">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20190928.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                            <span style='color:#7492b7'>警民衝突</span>
+                            <span style='color:#5d6989'>拘捕</span>
+                        </h3>
+                        <h2>雨傘運動五週年</h2>
+                        <p>民陣晚上在添馬公園發起「9.28反抗威權　迎接黎明」集會，集會開始前添馬公園已塞滿人潮，而後大批市民走出夏慤道並堵路，民陣在8時半宣布提早結束；</p>
+                        <p>警方夜晚用催淚彈和水炮車清場</p>
+                        <div><a href="https://theinitium.com/article/20190928-whatsnews-umbrella-movement-5th-anniversary/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>傘運五周年，港府稱會「審時度勢」推動政制發展</div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="meta-date">0928</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="special" data-time="20190928">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <p>香港眾志秘書長黃之鋒宣布參與區議會選舉，出選海怡西選區
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0928</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march" data-time="20190927">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20190927.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#994557'>遊行/集會</span>
+                        </h3>
+                        <p>中環愛丁堡廣場舉行「聲援及關注新屋嶺被捕者人權集會」，大會宣布5萬人參與集會
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0927</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="special" data-time="20190927">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <p>警方宣布9月2日已停用新屋嶺扣留中心
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0927</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="hk-gov" data-time="20190926">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20190926.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#a871a4'>港府回應</span>
+                        </h3>
+                        <h2>林鄭首場社區對話</h2>
+                        <p>對話於晚上7時於灣仔伊利沙伯體育館舉行，逾2萬人報名，抽出150人。下午伊館附近多間學校、醫院關閉，伊館外有中學生組人鏈。對話結束後，仍有大量市民包圍伊館要求對話，林鄭最終於凌晨1時半離開
+                        </p>
+                        <div><a href="https://theinitium.com/article/20190926-whatsnew-hk-dialogue-with-carrie-lam/"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <div class='readmore'>林鄭首場社區對話</div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="meta-date">0926</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="occupy attack" data-time="20190925">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#b77d8c'>佔領/圍堵</span>
+                            <span style='color:#4274bc'>襲擊傷人</span>
+                        </h3>
+                        <p>港鐵沙田站夜晚疑有跳閘人士被毆打，打人者進入控制室，過百人包圍控制室，防暴警察到場拘捕數人，在場人士破壞地鐵站設施、在落閘店舖上噴漆
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0925</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="china-gov special" data-time="20190925">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#8e7491'>特別消息</span>
+                            <span style='color:#9f3faa'>中央回應</span>
+                        </h3>
+                        <p>美國國會眾議院外交事務委員會通過受理《香港人權及民主法案》，法案將提交到眾議院大會審議；港澳辦發聲明，譴責美國國會粗暴干涉中國內政、嚴重踐踏國際法和國際關係基本準則
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0925</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="hk-gov" data-time="20190925">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#a871a4'>港府回應</span>
+                        </h3>
+                        <p>律政司司長鄭若驊證實港府正研究《反蒙面法》
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0925</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="special" data-time="20190925">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#8e7491'>特別消息</span>
+                        </h3>
+                        <p>美國總統特朗普聯合國大會上促請中國履行《中英聯合聲明》，履行保護香港的自由、法律制度及民主的承諾，中國選擇如何應對這個局勢，將斷定其將來的國際地位
+                    </div>
+                </div>
+                <div class="meta-date">0925</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="march" data-time="20190924">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#994557'>遊行/集會</span>
+                        </h3>
+                        <p>全港十八區、共50多個地點晚上舉行《1987：逆權公民》放映會
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0924</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="attack" data-time="20190924">
+                <div class="content-left-container">
+                    <div class="content-left">
+                        <img src="./images/news-photo/20190924.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3><span style='color:#4274bc'>襲擊傷人</span></h3>
+                        <p>
+                            民主黨立法會議員鄺俊宇於天水圍遇襲</p>
+                    </div>
+                </div>
+                <div class="meta-date">0924</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="china-gov" data-time="20190923">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#9f3faa'>中央回應</span>
+                        </h3>
+                        <p>中聯辦發聲明指，嚴厲譴責極端激進分子近日多次肆意侮辱國旗和連串違法暴力行徑
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0923</div>
+            </div>
+            <!-- // content -->
+            <!-- content // -->
+            <div class="timeline article" data-type="occupy" data-time="20190923">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#b77d8c'>佔領/圍堵</span>
+                        </h3>
+                        <p>夜晚有近百人於旺角警署外聚集，高喊口號、用鐳射筆射向警署，焚燒紙皮等雜物
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0923</div>
+            </div>
+            <!-- // content -->
+
+            <!-- content // -->
+            <div class="timeline article" data-type="march" data-time="20190923">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>
+                            <span style='color:#994557'>遊行/集會</span>
+                        </h3>
+                        <p>香港眾志發起「校門連儂日」，呼籲中學生以連儂牆方式裝飾校門、校門外欄杆等，宣傳五大訴求，不少中學生響應活動
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-date">0923</div>
+            </div>
+            <!-- // content -->
             <!-- content // -->
             <div class="timeline article" data-type="occupy arrest" data-time="20190922">
                 <div class="content-right-container">
@@ -234,7 +665,7 @@
                 <div class="content-right-container">
                     <div class="content-right">
                         <h3><span style='color:#848484'>其他</span></h3>
-                        <p>香港立法會議員何君堯早上發起「香港清潔日」活動，先後前往屯門、荃灣及筲箕灣等清潔街道，有市民在多區清理連儂牆</p>
+                        <h2>香港立法會議員何君堯早上發起「香港清潔日」活動，先後前往屯門、荃灣及筲箕灣等清潔街道，有市民在多區清理連儂牆</h2>
                     </div>
                 </div>
                 <div class="meta-date">0921</div>
@@ -941,7 +1372,7 @@
                 </div>
                 <div class="content-right-container">
                     <div class="content-right">
-                        <h3><span style='color:#994557'>遊行/集會</span>
+                        <h3><span style='color:#994557'>遊��/集會</span>
                             <span style='color:#995647'>罷工/不合作運動</span>
                             <span style='color:#4274bc'>襲擊傷人</span></h3>
                         <h2>開學日罷課集會</h2>
@@ -2028,7 +2459,7 @@
                 <div class="content-right-container">
                     <div class="content-right">
                         <h3><span style='color:#b77d8c'>佔領/圍堵</span>
-                            <span style='color:#7492b7'>警民衝突</span>
+                            <span style='color:#7492b7'>���民衝突</span>
                         </h3>
                         <p>數百市民包圍葵涌警署，要求警方釋放728被捕人士，衝突中有警員多次舉起霰彈槍指向人群</p>
                         <div><a href="https://theinitium.com/article/20190802-opinion-francis-investigation-governement-and-police-supporters/"
@@ -3196,7 +3627,7 @@
                 </tr>
                 <tr>
                     <td class='item'>攝　　影</td>
-                    <td>林振東、陳焯煇、Stanley Leung、GettyImage</td>
+                    <td>林振東、陳焯煇、Stanley Leung、劉子康、廖雁雄、GettyImage</td>
                 </tr>
                 <tr>
                     <td class='item'>圖片編輯</td>
