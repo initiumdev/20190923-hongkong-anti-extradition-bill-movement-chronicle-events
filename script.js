@@ -43,7 +43,7 @@ function updateContent(init) {
     } else if (dayExistence) {
         currentMonth = dayFilterActive[0].dataset.month;
     }
-    let filterMonth = (currentMonth) ? (moment().format('Y') + '-' + currentMonth) : null,
+    let filterMonth = (currentMonth) ? ('2019-'+currentMonth) : null,
         filterSort = (dayExistence) ? (dayFilterActive[0].dataset.sort == 0) : null,
         lastDay = (dayExistence) ? moment(filterMonth, 'YYYY-MM').endOf('month').format('DD') : null,
         startTime = (dayExistence) ? (filterMonth + '-' + ((filterSort) ? '01' : '16')) : null,
@@ -94,7 +94,6 @@ function updateContent(init) {
                 }
                 articles[index].className = articleClassName;
             }
-
         }
     }
     if (!init && !clearAll) {

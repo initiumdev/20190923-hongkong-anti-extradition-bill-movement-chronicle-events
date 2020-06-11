@@ -178,7 +178,7 @@ img {
     width: 20%;
 }
 
-.dayFilterBtn#add-line {
+.dayFilterBtn.add-line {
     border-right: 1px solid #ddd
 }
 
